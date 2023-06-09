@@ -20,30 +20,30 @@ const menuLinks = [
   ];
 // loop over array
 
-
-
+for (let i = 0; i < 12; i++) {
+    console.log(i);
+}
 
 const mainEl = document.querySelector('main');
 mainEl.classList.add('flex-ctr');
-const topMenuEl = document.querySelector('top-menu');
-topMenuEl.classList.add('flex-around'); 
 
-const subMenu = document.querySelector(subMenuEl);
+const topMenuEl = document.querySelector('.top-menu');
+topMenuEl.classList.add('flex-around');
+
+const subMenuEl = document.querySelector('.subMenuEl');
 subMenuEl.classList.add('flex-around');
+
 const topMenuLinks = topMenuEl.querySelectorAll('a');
 
 topMenuEl.addEventListener('click', function(evt) {
-
-  if (target.tagName === 'A') {
-    
-    console.log('An <a> element was clicked:', target.textContent);
-  }
-});
-
+    evt.preventDefault();
+    var target = evt.target;
 
 
 var showingSubMenu = false;
 
+
+})
 
 
 
